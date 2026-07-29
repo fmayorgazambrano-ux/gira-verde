@@ -4386,3 +4386,20 @@ section {
     }
 
 }
+/* ========================================= */
+/* FOTOGRAFÍAS TIPO MARCO */
+/* ========================================= */
+
+.foto-marco {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+    border-radius: 3px;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: middle;
+}
