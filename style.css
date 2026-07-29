@@ -1,0 +1,4388 @@
+/* ========================================= */
+/* CONFIGURACIÓN GENERAL DE LA PÁGINA */
+/* ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f2;
+    color: #263528;
+    line-height: 1.6;
+}
+
+
+/* ========================================= */
+/* ENCABEZADOS */
+/* ========================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #2f6b3b;
+}
+
+
+/* ========================================= */
+/* PÁRRAFOS */
+/* ========================================= */
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* ========================================= */
+/* LISTAS */
+/* ========================================= */
+
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+/* ========================================= */
+/* PORTADA PRINCIPAL */
+/* ========================================= */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        rgba(20, 60, 35, 0.85),
+        rgba(20, 60, 35, 0.85)
+    );
+
+    color: white;
+}
+
+
+/* Contenido de la portada */
+
+.hero-contenido {
+    max-width: 900px;
+}
+
+
+/* Texto pequeño superior */
+
+.hero-etiqueta {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+
+/* Título principal */
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+/* Título de la gira */
+
+.hero h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+/* Subtítulo */
+
+.hero h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+
+/* Descripción */
+
+.hero-descripcion {
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+    font-size: 18px;
+}
+
+
+/* Botón de Google Maps */
+
+.boton-mapa {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background-color: white;
+    color: #2f6b3b;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+
+/* Efecto cuando pasas el mouse */
+
+.boton-mapa:hover {
+    transform: translateY(-3px);
+}
+/* ========================================= */
+/* INFORMACIÓN GENERAL */
+/* ========================================= */
+
+.informacion {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+/* Título de la sección */
+
+.informacion h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+/* Texto debajo del título */
+
+.subtitulo-seccion {
+    color: #666666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* Contenedor de las tarjetas */
+
+.tarjetas-informacion {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Cada tarjeta */
+
+.tarjeta {
+    padding: 35px 20px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Iconos */
+
+.icono {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Títulos de las tarjetas */
+
+.tarjeta h3 {
+    color: #2f6b3b;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Texto de las tarjetas */
+
+.tarjeta p {
+    color: #555555;
+
+    font-size: 17px;
+}
+
+
+/* Destacar tarjeta del precio */
+
+.tarjeta-precio {
+    background-color: #2f6b3b;
+
+    color: white;
+}
+
+
+/* Título de la tarjeta de precio */
+
+.tarjeta-precio h3 {
+    color: white;
+}
+
+
+/* Texto de la tarjeta de precio */
+
+.tarjeta-precio p {
+    color: white;
+}
+
+
+/* ========================================= */
+/* ADAPTACIÓN PARA TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .tarjetas-informacion {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================= */
+/* ADAPTACIÓN PARA CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .tarjetas-informacion {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN DE EXPERIENCIAS */
+/* ========================================= */
+
+.experiencias {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background-color: #f4f7f2;
+}
+
+
+/* Contenedor de las tarjetas */
+
+.tarjetas-experiencias {
+    max-width: 1100px;
+
+    margin: 40px auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ========================================= */
+/* TARJETAS DE EXPERIENCIAS */
+/* ========================================= */
+
+.tarjeta-experiencia {
+
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    border-top: 5px solid #2f6b3b;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.tarjeta-experiencia:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ========================================= */
+/* ICONOS */
+/* ========================================= */
+
+.experiencia-icono {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e5f0e5;
+
+    border-radius: 50%;
+
+    font-size: 40px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULOS */
+/* ========================================= */
+
+.tarjeta-experiencia h3 {
+
+    color: #2f6b3b;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================= */
+/* TEXTO */
+/* ========================================= */
+
+.tarjeta-experiencia p {
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* ADAPTACIÓN PARA TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .tarjetas-experiencias {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ========================================= */
+/* ADAPTACIÓN PARA CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .tarjetas-experiencias {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN VALOR ACADÉMICO */
+/* ========================================= */
+
+.valor-academico {
+
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================================= */
+
+.valor-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+/* ========================================= */
+/* ETIQUETA SUPERIOR */
+/* ========================================= */
+
+.etiqueta-academica {
+
+    color: #2f6b3b;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULO */
+/* ========================================= */
+
+.valor-texto h2 {
+
+    font-size: 38px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ========================================= */
+/* PÁRRAFOS */
+/* ========================================= */
+
+.valor-texto p {
+
+    color: #555555;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ========================================= */
+/* CAJA DE BENEFICIOS */
+/* ========================================= */
+
+.beneficios-academicos {
+
+    background-color: #f4f7f2;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.beneficios-academicos h3 {
+
+    color: #2f6b3b;
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ========================================= */
+/* CADA BENEFICIO */
+/* ========================================= */
+
+.beneficio {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #dfe7df;
+
+}
+
+
+.beneficio:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* ICONO DEL BENEFICIO */
+
+.beneficio span {
+
+    font-size: 30px;
+
+    min-width: 40px;
+
+}
+
+
+/* TÍTULO DEL BENEFICIO */
+
+.beneficio h4 {
+
+    color: #2f6b3b;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* TEXTO DEL BENEFICIO */
+
+.beneficio p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* CARRERAS ACADÉMICAS */
+/* ========================================= */
+
+.carreras-academicas {
+
+    max-width: 1100px;
+
+    margin: 70px auto 0 auto;
+
+    padding-top: 50px;
+
+    text-align: center;
+
+    border-top: 1px solid #e0e0e0;
+
+}
+
+
+.carreras-academicas h3 {
+
+    color: #2f6b3b;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.carreras-academicas > p {
+
+    max-width: 750px;
+
+    margin: 0 auto 35px auto;
+
+    color: #666666;
+
+    font-size: 17px;
+
+}
+
+
+/* ========================================= */
+/* LISTA DE CARRERAS */
+/* ========================================= */
+
+.carreras-lista {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* TARJETAS DE CARRERAS */
+
+.carrera {
+
+    padding: 25px 15px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 12px;
+
+    color: #2f6b3b;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+
+}
+
+
+.carrera:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .valor-contenedor {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .carreras-lista {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .valor-academico {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .valor-texto h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .beneficios-academicos {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .carreras-lista {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN ITINERARIO */
+/* ========================================= */
+
+.itinerario {
+
+    padding: 90px 20px;
+
+    background-color: #f4f7f2;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO DEL ITINERARIO */
+/* ========================================= */
+
+.itinerario-encabezado {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.itinerario-encabezado h2 {
+
+    font-size: 40px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.itinerario-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR DE LOS DÍAS */
+/* ========================================= */
+
+.dias {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ========================================= */
+/* TARJETA DE CADA DÍA */
+/* ========================================= */
+
+.dia {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 40px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+}
+
+
+/* Efecto al pasar el mouse */
+
+.dia:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ========================================= */
+/* DÍA DESTACADO */
+/* ========================================= */
+
+.dia-destacado {
+
+    border: 3px solid #2f6b3b;
+
+}
+
+
+/* ========================================= */
+/* NÚMERO DEL DÍA */
+/* ========================================= */
+
+.dia-numero {
+
+    width: 80px;
+
+    height: 80px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+
+/* ========================================= */
+/* ETIQUETA DEL DÍA */
+/* ========================================= */
+
+.dia-etiqueta {
+
+    color: #2f6b3b;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULO DEL DÍA */
+/* ========================================= */
+
+.dia-contenido h3 {
+
+    font-size: 30px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================= */
+/* DESCRIPCIÓN DEL DÍA */
+/* ========================================= */
+
+.dia-descripcion {
+
+    color: #666666;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* ACTIVIDADES */
+/* ========================================= */
+
+.actividad {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #e5e5e5;
+
+}
+
+
+/* ========================================= */
+/* ICONO DE ACTIVIDAD */
+/* ========================================= */
+
+.actividad-icono {
+
+    width: 50px;
+
+    height: 50px;
+
+    min-width: 50px;
+
+    background-color: #e5f0e5;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULO DE ACTIVIDAD */
+/* ========================================= */
+
+.actividad h4 {
+
+    color: #2f6b3b;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ========================================= */
+/* LISTA DE ACTIVIDADES */
+/* ========================================= */
+
+.actividad ul {
+
+    padding-left: 20px;
+
+    margin-bottom: 0;
+
+}
+
+
+.actividad li {
+
+    color: #555555;
+
+    margin-bottom: 8px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 700px) {
+
+    .dia {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .dia-numero {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 22px;
+
+    }
+
+
+    .dia-contenido h3 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 500px) {
+
+    .itinerario {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .itinerario-encabezado h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .dia {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .actividad {
+
+        gap: 12px;
+
+    }
+
+
+    .actividad-icono {
+
+        width: 40px;
+
+        height: 40px;
+
+        min-width: 40px;
+
+        font-size: 20px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN DE INVERSIÓN */
+/* ========================================= */
+
+.inversion {
+
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.inversion-encabezado {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.inversion-encabezado h2 {
+
+    font-size: 40px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.inversion-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================================= */
+
+.inversion-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 380px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+
+}
+
+
+/* ========================================= */
+/* TARJETA DEL PRECIO */
+/* ========================================= */
+
+.precio-destacado {
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    padding: 45px 35px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    position: sticky;
+
+    top: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ICONO */
+
+.precio-icono {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* TEXTO PEQUEÑO */
+
+.precio-destacado > p:first-of-type {
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* PRECIO */
+
+.precio {
+
+    font-size: 70px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    margin: 15px 0;
+
+}
+
+
+/* DURACIÓN */
+
+.precio-destacado h3 {
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* DESCRIPCIÓN */
+
+.precio-descripcion {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+
+}
+
+
+/* CUPO */
+
+.cupo {
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 10px;
+
+}
+
+
+/* ========================================= */
+/* SERVICIOS INCLUIDOS */
+/* ========================================= */
+
+.incluye {
+
+    padding: 35px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 20px;
+
+}
+
+
+.incluye > h3 {
+
+    color: #2f6b3b;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ========================================= */
+/* CADA SERVICIO */
+/* ========================================= */
+
+.incluye-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #dce5dc;
+
+}
+
+
+.incluye-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* ICONO */
+
+.incluye-item > span {
+
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+}
+
+
+/* TÍTULO */
+
+.incluye-item h4 {
+
+    color: #2f6b3b;
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* TEXTO */
+
+.incluye-item p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* NOTA FINAL */
+/* ========================================= */
+
+.nota-inversion {
+
+    max-width: 900px;
+
+    margin: 50px auto 0 auto;
+
+    padding: 20px 25px;
+
+    background-color: #e5f0e5;
+
+    border-left: 5px solid #2f6b3b;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+
+
+.nota-inversion p {
+
+    color: #3d513f;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .inversion-contenedor {
+
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+
+    }
+
+
+    .precio-destacado {
+
+        position: static;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .inversion {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .inversion-encabezado h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .precio-destacado {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .precio {
+
+        font-size: 60px;
+
+    }
+
+
+    .incluye {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .incluye-item {
+
+        gap: 12px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN DE ESTADÍA */
+/* ========================================= */
+
+.estadia {
+
+    padding: 90px 20px;
+
+    background-color: #f4f7f2;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.estadia-encabezado {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.estadia-encabezado h2 {
+
+    font-size: 40px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.estadia-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* TARJETAS DE ESTADÍA */
+/* ========================================= */
+
+.estadia-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.estadia-tarjeta {
+
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.estadia-tarjeta:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ========================================= */
+/* ICONOS */
+/* ========================================= */
+
+.estadia-icono {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e5f0e5;
+
+    border-radius: 50%;
+
+    font-size: 38px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULOS */
+/* ========================================= */
+
+.estadia-tarjeta h3 {
+
+    color: #2f6b3b;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ========================================= */
+/* TEXTO */
+/* ========================================= */
+
+.estadia-tarjeta p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* INFORMACIÓN DE LAS NOCHES */
+/* ========================================= */
+
+.noches {
+
+    max-width: 900px;
+
+    margin: 50px auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.noche-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.noche-item > span {
+
+    font-size: 30px;
+
+}
+
+
+.noche-item strong {
+
+    color: #2f6b3b;
+
+    font-size: 18px;
+
+}
+
+
+.noche-item p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-top: 8px;
+
+}
+
+
+/* ========================================= */
+/* MENSAJE FINAL */
+/* ========================================= */
+
+.estadia-mensaje {
+
+    max-width: 900px;
+
+    margin: 50px auto 0 auto;
+
+    padding: 35px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+
+.estadia-mensaje h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.estadia-mensaje p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .estadia-contenedor {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .estadia {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .estadia-encabezado h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .estadia-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .noches {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .estadia-mensaje {
+
+        padding: 30px 20px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN DESTINO */
+/* ========================================= */
+
+.destino {
+
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.destino-encabezado {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.destino-encabezado h2 {
+
+    font-size: 40px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.destino-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================================= */
+
+.destino-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: stretch;
+
+}
+
+
+/* ========================================= */
+/* INFORMACIÓN DEL DESTINO */
+/* ========================================= */
+
+.destino-informacion {
+
+    padding: 45px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 25px;
+
+}
+
+
+.destino-icono {
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.destino-etiqueta {
+
+    color: #2f6b3b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.destino-informacion h3 {
+
+    color: #2f6b3b;
+
+    font-size: 38px;
+
+    margin: 10px 0 5px 0;
+
+}
+
+
+.destino-informacion h4 {
+
+    color: #555555;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+
+}
+
+
+.destino-informacion > p {
+
+    color: #666666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ========================================= */
+/* CARACTERÍSTICAS */
+/* ========================================= */
+
+.destino-caracteristicas {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin: 30px 0;
+
+}
+
+
+.destino-caracteristicas div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    color: #2f6b3b;
+
+}
+
+
+.destino-caracteristicas span {
+
+    color: #555555;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================= */
+/* BOTÓN GOOGLE MAPS */
+/* ========================================= */
+
+.boton-mapa {
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-mapa:hover {
+
+    background-color: #24542e;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ========================================= */
+/* MAPA VISUAL */
+/* ========================================= */
+
+.destino-mapa {
+
+    min-height: 500px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(47, 107, 59, 0.85),
+            rgba(27, 70, 37, 0.9)
+        );
+
+    position: relative;
+
+}
+
+
+/* EFECTO DECORATIVO */
+
+.destino-mapa::before {
+
+    content: "🌿  🌳  🗺️  🌳  🌿";
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    opacity: 0.4;
+
+}
+
+
+/* CONTENIDO DEL MAPA */
+
+.mapa-contenido {
+
+    text-align: center;
+
+    color: white;
+
+    max-width: 400px;
+
+    padding: 40px;
+
+}
+
+
+.mapa-icono {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.mapa-contenido h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.mapa-contenido p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* BOTÓN SECUNDARIO */
+
+.boton-mapa-secundario {
+
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    background-color: white;
+
+    color: #2f6b3b;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-mapa-secundario:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* ========================================= */
+/* MENSAJE FINAL */
+/* ========================================= */
+
+.destino-mensaje {
+
+    max-width: 900px;
+
+    margin: 50px auto 0 auto;
+
+    padding: 25px 30px;
+
+    background-color: #e5f0e5;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+
+.destino-mensaje p {
+
+    color: #3d513f;
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 850px) {
+
+    .destino-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .destino-mapa {
+
+        min-height: 400px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .destino {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .destino-encabezado h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .destino-informacion {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .destino-informacion h3 {
+
+        font-size: 30px;
+
+    }
+
+
+    .destino-caracteristicas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .destino-mapa {
+
+        min-height: 350px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN PROFESIONALES */
+/* ========================================= */
+
+.profesionales {
+
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.profesionales-encabezado {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.profesionales-encabezado h2 {
+
+    font-size: 40px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.profesionales-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* TARJETAS DE PROFESIONALES */
+/* ========================================= */
+
+.profesionales-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.profesionales-tarjeta {
+
+    padding: 40px 30px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border-top: 5px solid #2f6b3b;
+
+    transition: 0.3s;
+
+}
+
+
+.profesionales-tarjeta:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ========================================= */
+/* ICONOS */
+/* ========================================= */
+
+.profesional-icono {
+
+    width: 85px;
+
+    height: 85px;
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 42px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULOS */
+/* ========================================= */
+
+.profesionales-tarjeta h3 {
+
+    color: #2f6b3b;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================= */
+/* DESCRIPCIÓN */
+/* ========================================= */
+
+.profesionales-tarjeta > p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================= */
+/* TEMAS */
+/* ========================================= */
+
+.profesional-temas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+}
+
+
+.profesional-temas span {
+
+    padding: 8px;
+
+    background-color: #ffffff;
+
+    border-radius: 8px;
+
+    color: #2f6b3b;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================= */
+/* METODOLOGÍA */
+/* ========================================= */
+
+.metodologia {
+
+    max-width: 1100px;
+
+    margin: 80px auto 0 auto;
+
+    padding: 60px;
+
+    background-color: #2f6b3b;
+
+    border-radius: 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    color: white;
+
+}
+
+
+/* ========================================= */
+/* TEXTO METODOLOGÍA */
+/* ========================================= */
+
+.metodologia-texto h3 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.metodologia-texto p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    opacity: 0.9;
+
+}
+
+
+/* ========================================= */
+/* PASOS */
+/* ========================================= */
+
+.metodologia-pasos {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.metodologia-paso {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+
+
+.metodologia-paso:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* NÚMERO */
+
+.metodologia-paso > span {
+
+    width: 45px;
+
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(255,255,255,0.15);
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+}
+
+
+/* TÍTULO */
+
+.metodologia-paso h4 {
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* TEXTO */
+
+.metodologia-paso p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    opacity: 0.85;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .profesionales-contenedor {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+
+    .metodologia {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 45px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .profesionales {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .profesionales-encabezado h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .profesionales-tarjeta {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .metodologia {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .metodologia-texto h3 {
+
+        font-size: 28px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN ¿POR QUÉ RUTA VERDE? */
+/* ========================================= */
+
+.por-que-ruta {
+
+    padding: 90px 20px;
+
+    background-color: #f4f7f2;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.por-que-encabezado {
+
+    max-width: 850px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.por-que-encabezado h2 {
+
+    font-size: 42px;
+
+    color: #2f6b3b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.por-que-encabezado > p:last-child {
+
+    color: #666666;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR DE BENEFICIOS */
+/* ========================================= */
+
+.beneficios-contenedor {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* ========================================= */
+/* TARJETA DE BENEFICIO */
+/* ========================================= */
+
+.beneficio {
+
+    padding: 35px 25px;
+
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.beneficio:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ========================================= */
+/* ICONO DEL BENEFICIO */
+/* ========================================= */
+
+.beneficio-icono {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e5f0e5;
+
+    border-radius: 50%;
+
+    font-size: 38px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULO */
+/* ========================================= */
+
+.beneficio h3 {
+
+    color: #2f6b3b;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ========================================= */
+/* DESCRIPCIÓN */
+/* ========================================= */
+
+.beneficio p {
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================= */
+/* SECCIÓN DE CARRERAS */
+/* ========================================= */
+
+.carreras {
+
+    max-width: 1000px;
+
+    margin: 80px auto 0 auto;
+
+    text-align: center;
+
+}
+
+
+.carreras h3 {
+
+    color: #2f6b3b;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.carreras > p:not(.etiqueta-academica) {
+
+    color: #666666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 750px;
+
+    margin: 0 auto 35px auto;
+
+}
+
+
+/* ========================================= */
+/* LISTA DE CARRERAS */
+/* ========================================= */
+
+.carreras-lista {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.carrera {
+
+    padding: 20px 15px;
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    color: #2f6b3b;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.carrera span {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ========================================= */
+/* FRASE DESTACADA */
+/* ========================================= */
+
+.frase-ruta {
+
+    max-width: 950px;
+
+    margin: 70px auto 0 auto;
+
+    padding: 55px 45px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+
+.frase-icono {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.frase-ruta h3 {
+
+    font-size: 32px;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+
+}
+
+
+.frase-ruta p {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    opacity: 0.9;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .beneficios-contenedor {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .carreras-lista {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .por-que-ruta {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .por-que-encabezado h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .beneficios-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .carreras-lista {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .frase-ruta {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .frase-ruta h3 {
+
+        font-size: 26px;
+
+    }
+
+}
+/* ========================================= */
+/* SECCIÓN DE CONTACTO */
+/* ========================================= */
+
+.contacto {
+
+    padding: 90px 20px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.contacto-encabezado {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+}
+
+
+.contacto-encabezado .etiqueta-academica {
+
+    color: white;
+
+}
+
+
+.contacto-encabezado h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-encabezado > p:last-child {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    opacity: 0.9;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================================= */
+
+.contacto-contenedor {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+/* ========================================= */
+/* INFORMACIÓN DE CONTACTO */
+/* ========================================= */
+
+.contacto-informacion {
+
+    padding: 45px;
+
+    background-color: white;
+
+    color: #333333;
+
+    border-radius: 25px;
+
+}
+
+
+.contacto-icono {
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-informacion h3 {
+
+    color: #2f6b3b;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-informacion > p {
+
+    color: #666666;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ========================================= */
+/* TELÉFONOS */
+/* ========================================= */
+
+.telefono {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #f4f7f2;
+
+    border-radius: 12px;
+
+}
+
+
+.telefono > span {
+
+    font-size: 25px;
+
+}
+
+
+.telefono div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.telefono small {
+
+    color: #777777;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.telefono strong {
+
+    color: #2f6b3b;
+
+    font-size: 17px;
+
+    margin-top: 3px;
+
+}
+
+
+/* ========================================= */
+/* BOTONES */
+/* ========================================= */
+
+.botones-contacto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.boton-whatsapp,
+.boton-ubicacion {
+
+    display: block;
+
+    padding: 15px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+/* WHATSAPP */
+
+.boton-whatsapp {
+
+    background-color: #25D366;
+
+    color: white;
+
+}
+
+
+.boton-whatsapp:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* UBICACIÓN */
+
+.boton-ubicacion {
+
+    background-color: #e5f0e5;
+
+    color: #2f6b3b;
+
+}
+
+
+.boton-ubicacion:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ========================================= */
+/* RESERVA */
+/* ========================================= */
+
+.reserva {
+
+    padding: 45px;
+
+    background-color: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+
+.reserva-icono {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.reserva-etiqueta {
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+}
+
+
+.reserva h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* NÚMERO 30 */
+
+.numero-cupo {
+
+    font-size: 90px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    margin: 15px 0 5px 0;
+
+}
+
+
+.reserva > p:not(.reserva-etiqueta):not(.reserva-texto) {
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* TEXTO */
+
+.reserva-texto {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* BOTÓN RESERVA */
+
+.boton-reserva {
+
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background-color: white;
+
+    color: #2f6b3b;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-reserva:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* ========================================= */
+/* MENSAJE FINAL */
+/* ========================================= */
+
+.contacto-final {
+
+    max-width: 800px;
+
+    margin: 70px auto 0 auto;
+
+    text-align: center;
+
+    padding-top: 50px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+}
+
+
+.contacto-final h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-final p {
+
+    font-size: 17px;
+
+    opacity: 0.9;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-final strong {
+
+    font-size: 20px;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 800px) {
+
+    .contacto-contenedor {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .contacto {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .contacto-encabezado h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .contacto-informacion,
+    .reserva {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .numero-cupo {
+
+        font-size: 70px;
+
+    }
+
+}
+/* ========================================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================================= */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* ========================================= */
+/* BARRA DE NAVEGACIÓN */
+/* ========================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.96);
+
+    box-shadow:
+        0 2px 15px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR */
+/* ========================================= */
+
+.navbar-contenedor {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 12px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+/* ========================================= */
+/* LOGO */
+/* ========================================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #2f6b3b;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+.logo:first-letter {
+
+    font-size: 28px;
+
+}
+
+
+/* ========================================= */
+/* MENÚ */
+/* ========================================= */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.menu a {
+
+    color: #444444;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    color: #2f6b3b;
+
+}
+
+
+/* ========================================= */
+/* BOTÓN RESERVAR */
+/* ========================================= */
+
+.boton-navbar {
+
+    padding: 11px 18px;
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-navbar:hover {
+
+    background-color: #24542e;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ========================================= */
+/* AJUSTE DE SECCIONES */
+/* ========================================= */
+
+section {
+
+    scroll-margin-top: 75px;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 1000px) {
+
+    .menu {
+
+        gap: 15px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar-contenedor {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .logo {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .menu {
+
+        order: 2;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+    }
+
+
+    .boton-navbar {
+
+        order: 3;
+
+    }
+
+}
+/* ========================================= */
+/* PORTADA PRINCIPAL - HERO */
+/* ========================================= */
+
+.hero {
+
+    min-height: 90vh;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf3e8,
+            #f8faf6
+        );
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* ========================================= */
+/* CONTENEDOR */
+/* ========================================= */
+
+.hero-contenedor {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+/* ========================================= */
+/* CONTENIDO */
+/* ========================================= */
+
+.hero-contenido {
+
+    max-width: 700px;
+
+}
+
+
+/* ========================================= */
+/* ETIQUETA */
+/* ========================================= */
+
+.hero-etiqueta {
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    padding: 8px 15px;
+
+    background-color: #dcebdc;
+
+    color: #2f6b3b;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ========================================= */
+/* TÍTULO PRINCIPAL */
+/* ========================================= */
+
+.hero h1 {
+
+    margin: 0;
+
+    color: #234f2d;
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #2f6b3b;
+
+}
+
+
+/* ========================================= */
+/* SUBTÍTULO */
+/* ========================================= */
+
+.hero h2 {
+
+    max-width: 650px;
+
+    margin: 25px 0 20px 0;
+
+    color: #555555;
+
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+}
+
+
+/* ========================================= */
+/* DESCRIPCIÓN */
+/* ========================================= */
+
+.hero-descripcion {
+
+    max-width: 650px;
+
+    color: #666666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ========================================= */
+/* DATOS RÁPIDOS */
+/* ========================================= */
+
+.hero-datos {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin: 30px 0 20px 0;
+
+}
+
+
+.hero-dato {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.hero-dato > span {
+
+    font-size: 25px;
+
+}
+
+
+.hero-dato div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.hero-dato strong {
+
+    color: #2f6b3b;
+
+    font-size: 16px;
+
+}
+
+
+.hero-dato small {
+
+    color: #777777;
+
+    font-size: 11px;
+
+}
+
+
+/* ========================================= */
+/* UBICACIÓN */
+/* ========================================= */
+
+.hero-ubicacion {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 20px 0;
+
+    color: #555555;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================= */
+/* BOTONES */
+/* ========================================= */
+
+.hero-botones {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.hero-boton-principal,
+.hero-boton-secundario {
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.hero-boton-principal {
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+}
+
+
+.hero-boton-principal:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(47, 107, 59, 0.3);
+
+}
+
+
+/* BOTÓN SECUNDARIO */
+
+.hero-boton-secundario {
+
+    background-color: white;
+
+    color: #2f6b3b;
+
+    border: 2px solid #2f6b3b;
+
+}
+
+
+.hero-boton-secundario:hover {
+
+    background-color: #2f6b3b;
+
+    color: white;
+
+}
+
+
+/* ========================================= */
+/* TARJETA VISUAL */
+/* ========================================= */
+
+.hero-tarjeta {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    border-radius: 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2f6b3b,
+            #173d23
+        );
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* CÍRCULOS DECORATIVOS */
+
+.hero-tarjeta::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255,255,255,0.08);
+
+    top: -80px;
+
+    right: -70px;
+
+}
+
+
+.hero-tarjeta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255,255,255,0.06);
+
+    bottom: -60px;
+
+    left: -50px;
+
+}
+
+
+/* ========================================= */
+/* CONTENIDO TARJETA */
+/* ========================================= */
+
+.hero-tarjeta-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.hero-emojis {
+
+    font-size: 45px;
+
+    letter-spacing: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-tarjeta h3 {
+
+    max-width: 350px;
+
+    margin: 0 auto 20px auto;
+
+    font-size: 35px;
+
+    line-height: 1.2;
+
+}
+
+
+.hero-tarjeta p {
+
+    max-width: 350px;
+
+    margin: 0 auto 30px auto;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+
+}
+
+
+/* ========================================= */
+/* ELEMENTOS INCLUIDOS */
+/* ========================================= */
+
+.hero-incluye {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+}
+
+
+.hero-incluye span {
+
+    padding: 10px;
+
+    background-color: rgba(255,255,255,0.12);
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+}
+
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-contenedor {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .hero-contenido {
+
+        max-width: 800px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+
+    .hero h2,
+    .hero-descripcion {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-datos,
+    .hero-botones,
+    .hero-ubicacion {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-tarjeta {
+
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+        min-height: 400px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .hero-datos {
+
+        flex-direction: column;
+
+    }
+
+
+    .hero-dato {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-botones {
+
+        flex-direction: column;
+
+    }
+
+
+    .hero-boton-principal,
+    .hero-boton-secundario {
+
+        text-align: center;
+
+    }
+
+
+    .hero-tarjeta {
+
+        min-height: 350px;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .hero-tarjeta h3 {
+
+        font-size: 28px;
+
+    }
+
+}
